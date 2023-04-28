@@ -1,0 +1,15 @@
+.bottom {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(153, 153, 153, 0.16);
+  padding: 10px 0;
+  z-index: 1000;
+  margin-top: 5rem;
+  @media (max-width:600px) {
+    display: none;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

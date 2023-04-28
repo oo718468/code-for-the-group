@@ -1,0 +1,67 @@
+.header_dashboard{
+    position: fixed;
+   top: 75px;
+    width: 253px;
+    background-color: #191C24;
+    height: 100vh;
+    .profile_items{
+        position: relative;
+        top: 65px;
+        a{
+            text-decoration: none;
+        }
+
+        .my_profil_first{
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+            height: 48px;
+            width: 237px;
+            gap: 10px;
+            span{
+                display: none;
+                
+            }
+            
+         
+
+            .user_logo1{
+                padding: 5px;                       
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                background-color: #2A2D3A;
+                display: flex;
+            }
+            .user_name_number1{
+                padding: 5px;
+                h4{
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #ffff;
+                }
+            }
+        }
+        .my_profil_first:hover{
+            background: #101217;
+            border-radius: 0px 50px 50px 0px;
+            height: 48px;
+            width: 237px;
+            // border-left: 6px solid #DF2D43;
+            transition: 0.2s ;
+            span{
+                width: 6px;
+                background: #DF2D43;
+                height: 48px;
+                position: absolute;
+                left: 0;
+                display: block;
+                padding-right: 5px;
+            }
+        }
+      
+    }
+    .my_News_header{
+        margin-top: 10px;
+    }
+}

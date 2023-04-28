@@ -1,0 +1,27 @@
+.find {
+  background: #df2d43;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 1px rgba(50, 40, 61, 0.4),
+    0px 2px 3px rgba(50, 40, 61, 0.2);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 9px 15px;
+  margin-left: 12px;
+  width: 180px;
+  transition: 1s ease;
+  cursor: pointer;
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding-right: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}

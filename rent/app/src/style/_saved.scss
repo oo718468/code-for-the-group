@@ -1,0 +1,25 @@
+.saved {
+  padding: 9px 15px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #fd586b;
+  box-shadow: 0px 0px 1px rgba(50, 40, 61, 0.4),
+    0px 2px 3px rgba(50, 40, 61, 0.2);
+  border-radius: 60px;
+  cursor: pointer;
+  img {
+    padding-right: 5px;
+  }
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #df2d43;
+  }
+}

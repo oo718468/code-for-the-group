@@ -1,0 +1,20 @@
+.header_comment{
+    position: relative;
+    left: 2rem;
+    padding: 2rem 0px;
+    h1{
+        font-weight: 500;
+        font-size: 14px;
+        color: #55595C;
+        padding: 10px 0px;
+    }
+    textarea{
+        width: 402px;
+        height: 60px;
+        border: 1px solid #E6E6E6;
+        border-radius: 8px;
+        outline: none;
+        resize: none;
+        padding: 5px;
+        }
+}

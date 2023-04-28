@@ -1,0 +1,34 @@
+{
+  "uz": {
+    "Ijara": "Ijara",
+    "Sotuv": "Sotuv",
+    "Yangi qurilgan": "Yangi qurilgan",
+    "Nimani qidiryapsiz?": "Nimani qidiryapsiz?",
+    "uz": "uz",
+    "E'lon berish": "E'lon berish",
+    "Toshkent": "Toshkent",
+    "Turi": "Turi",
+    "Narxi": "Narxi",
+    "Kvadrat": "Kvadrat",
+    "Xonalar": "Xonalar",
+    "Ko'proq filtrlar": "Ko'proq filtrlar",
+    "Saqlangan": "Saqlangan",
+    "Qidirish": "Qidirish"
+  },
+  "ru": {
+    "Ijara": "Арендовать",
+    "Sotuv": "Продажа",
+    "Yangi qurilgan": "Новые разработки",
+    "Nimani qidiryapsiz?": "Искать товары и категории",
+    "uz": "ru",
+    "E'lon berish": "Подать объявление",
+    "Toshkent": "Ташкент",
+    "Turi": "Тип",
+    "Narxi": "Цена",
+    "Kvadrat": "Площад",
+    "Xonalar": "Номера",
+    "Ko'proq filtrlar": "Дополнительные фильтры",
+    "Saqlangan": "Сохранить поиск",
+    "Qidirish": "Поиск"
+  }
+}

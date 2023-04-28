@@ -1,0 +1,55 @@
+.big_rooms{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    .first_room{
+        
+       button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 42px;
+        gap: 5px;
+        border: 1px solid #E6E6E6;
+        border-radius: 50px;
+        background-color: #fff;
+        cursor: pointer;
+        p{
+            font-weight: 500;
+            font-size: 14px;
+            color: #818A91;
+        }
+      
+       }  button:hover{
+        border: 2px solid #DF2D43;
+        p{
+            color: #DF2D43;
+        }
+    }
+    }
+    .second_room{
+        display: flex;
+        gap: 10px;
+        button{
+            width: 42px;
+            height: 42px;
+            border: 2px solid #DF2D43;
+            background-color: #fff;
+            border-radius: 50%;
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                color: #818A91;
+            }
+        }
+        button:hover{
+            background-color: #DF2D43;
+            cursor: pointer;
+           p{
+            color: white;
+           }
+        }
+    }
+    
+}
