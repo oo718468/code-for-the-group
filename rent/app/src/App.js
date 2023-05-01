@@ -12,14 +12,15 @@ import Massage from "./components/Home/adminPanel/Massage";
 import TopUpAccount from "./components/Home/adminPanel/TopUpAccount";
 import Saved1 from "./components/Home/adminPanel/Saved";
 import Exit from "./components/Home/adminPanel/Exit";
+import TypeOfDefinitions from "./components/Home/definitions/TypeOfDefinitions";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-         <Route index element={<Home />} />
-        <Route path="topnavbar" element={<TopNavbar />}/>
-        <Route path="bottomNavbar" element={<BottomNavbar />}/>
+        <Route index element={<Home />} />
+        <Route path="topnavbar" element={<TopNavbar />} />
+        <Route path="bottomNavbar" element={<BottomNavbar />} />
         <Route path="products" element={<Products />} />
         <Route path="announcement" element={<Announcement />} />
         <Route path="myProfil" element={<MyProfile />} />
@@ -29,6 +30,7 @@ function App() {
         <Route path="topUpAccount" element={<TopUpAccount />} />
         <Route path="saved1" element={<Saved1 />} />
         <Route path="exit" element={<Exit />} />
+        <Route path="definitions" element={<TypeOfDefinitions />} />
       </Routes>
     </div>
   );

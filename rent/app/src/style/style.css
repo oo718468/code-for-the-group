@@ -1624,7 +1624,7 @@ form {
 .header_communicat h4 {
   font-weight: 500;
   font-size: 14px;
-  color: #55595C;
+  color: #55595c;
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1638,7 +1638,7 @@ form {
 .header_communicat .communicat_name input {
   width: 194px;
   height: 42px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 8px;
   outline: none;
   padding: 5px;
@@ -1654,7 +1654,7 @@ form {
 .header_communicat .communicat_number .comunicat_flags input {
   width: 115px;
   height: 42px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 8px;
   padding: 10px;
   outline: none;
@@ -1665,7 +1665,7 @@ form {
 .header_communicat .communicat_number .comunicat_child_number input {
   width: 283px;
   height: 42px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 8px;
   padding: 10px;
   outline: none;
@@ -1679,10 +1679,11 @@ form {
 .header_communicat .communicat_button button {
   width: 196px;
   height: 42px;
-  background: #DF2D43;
-  border: 2px solid #FFFFFF;
+  background: #df2d43;
+  border: 2px solid #ffffff;
   box-shadow: 0px 0px 1px rgba(50, 40, 61, 0.4), 0px 2px 3px rgba(50, 40, 61, 0.2);
   border-radius: 60px;
+  cursor: pointer;
 }
 .header_communicat .communicat_button button p {
   color: white;
