@@ -8,25 +8,25 @@ function City() {
   const menuRef = useRef();
   const downRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== downRef.current) {
-      setIsOpen(false);
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (e.target !== menuRef.current && e.target !== downRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // });
   return (
     <div className="city">
-      <div className="city_title">
-        <button ref={downRef} onClick={() => setIsOpen((prev) => !prev)}>
-          Toshkent
+      <div onClick={() => setIsOpen(!isOpen)} className="city_title">
+         <button >
+            <p>Toshkent</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="city_dropdown" ref={menuRef}>
-            <div className="city_dropdown_column">
+            <div onClick={() => setIsOpen(false)} className="city_dropdown_column">
               <div className="city_dropdown_items">
                 <p>Andijan viloyati</p>
               </div>

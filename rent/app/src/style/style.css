@@ -1124,11 +1124,12 @@ body {
   max-width: 250px;
 }
 .products_container .products_item .products_image img {
+  overflow: hidden;
+  border-radius: 6px;
   transition: 0.3s ease-in-out;
 }
 .products_container .products_item .products_image img:hover {
-  transform: scale(1.2);
-  border-radius: 6px;
+  transform: scale(1.1);
 }
 .products_container .products_item .products_image .image_top {
   position: absolute;
@@ -1218,6 +1219,32 @@ body {
   color: #000000;
 }
 
+.products_image {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.products_item:hover .products_image > img {
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #df2d43 !important;
+  cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 15px;
+  color: #df2d43 !important;
+  fill: black !important;
+  stroke: black !important;
+  display: none;
+}
+
 .big_announcement {
   max-width: 608px;
   margin: 0 auto;
@@ -1272,24 +1299,34 @@ body {
   align-items: center;
   padding: 2rem 0px;
 }
-.type_home_header button {
-  width: 135px;
+.type_home_header .bottom_header {
+  width: 155px;
   height: 42px;
-  background: #FFFFFF;
-  border: 1px solid #E6E6E6;
+  background: #ffffff;
+  border: 2px solid #e6e6e6;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #818A91;
-  gap: 5px;
+  justify-content: flex-end;
+  color: #818a91;
+  padding: 0px 5px;
+  gap: 10px;
 }
-.type_home_header button:hover {
-  border: 2px solid #DF2D43;
+.type_home_header .bottom_header button p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #818a91;
+}
+.type_home_header .bottom_header:hover {
+  border: 2px solid #df2d43;
   cursor: pointer;
 }
-.type_home_header button:hover p {
-  color: #DF2D43;
+.type_home_header button {
+  display: flex;
+  border: none;
+  background-color: white;
+  align-items: center;
+  padding-right: 5px;
 }
 .type_home_header .header_json ul {
   position: absolute;
@@ -1311,7 +1348,7 @@ body {
   list-style: none;
 }
 .type_home_header .header_json ul li:hover {
-  background-color: #DF2D43;
+  background-color: #df2d43;
   color: white;
 }
 .type_home_header .second_bottom_header {
@@ -1319,13 +1356,13 @@ body {
   width: 250px;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #E6E6E6;
+  border: 2px solid #e6e6e6;
   border-radius: 50px;
   height: 42px;
   padding: 10px;
 }
 .type_home_header .second_bottom_header:hover {
-  border: 2px solid #DF2D43;
+  border: 2px solid #df2d43;
 }
 
 .big_rooms {
@@ -1655,7 +1692,7 @@ form {
   position: fixed;
   top: 75px;
   width: 253px;
-  background-color: #191C24;
+  background-color: #191c24;
   height: 100vh;
 }
 .header_dashboard .profile_items {
@@ -1672,6 +1709,7 @@ form {
   height: 48px;
   width: 237px;
   gap: 10px;
+  transition: 0.3s;
 }
 .header_dashboard .profile_items .my_profil_first span {
   display: none;
@@ -1681,8 +1719,14 @@ form {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background-color: #2A2D3A;
+  background-color: #2a2d3a;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_dashboard .profile_items .my_profil_first .user_logo1 img {
+  width: 19px;
+  height: 17px;
 }
 .header_dashboard .profile_items .my_profil_first .user_name_number1 {
   padding: 5px;
@@ -1693,20 +1737,10 @@ form {
   color: white;
 }
 .header_dashboard .profile_items .my_profil_first:hover {
-  background: #101217;
   border-radius: 0px 50px 50px 0px;
-  height: 48px;
-  width: 237px;
-  transition: 0.2s;
-}
-.header_dashboard .profile_items .my_profil_first:hover span {
-  width: 6px;
-  background: #DF2D43;
-  height: 48px;
-  position: absolute;
-  left: 0;
-  display: block;
-  padding-right: 5px;
+  border-left: 3px solid #df2d43;
+  padding-left: 10px;
+  background-color: #101217;
 }
 .header_dashboard .my_News_header {
   margin-top: 10px;

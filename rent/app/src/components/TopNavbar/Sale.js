@@ -9,27 +9,27 @@ function Sale() {
   const menuRef = useRef();
   const downRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== downRef.current) {
-      setIsOpen(false);
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (e.target !== menuRef.current && e.target !== downRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // });
   return (
     <div className="sale">
       <div className="sale_title">
-        <button ref={downRef} onClick={() => setIsOpen((prev) => !prev)}>
-          Sotuv
+          <button onClick={() => setIsOpen(!isOpen)}>        
+            <p>Sotuv</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="sale_dropdown" ref={menuRef}>
             {sale.map((item, i) => (
               <div className="sale_dropdown_box">
-                <h3>{item.city}</h3>
+                <h3 onClick={() => setIsOpen(false)}>{item.city}</h3>
                 {/* <h3>{item.emotions}</h3> */}
               </div>
             ))}

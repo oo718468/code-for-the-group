@@ -9,26 +9,25 @@ function Location() {
   const menuRef = useRef();
   const downRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== downRef.current) {
-      setIsOpen(false);
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (e.target !== menuRef.current && e.target !== downRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // });
   return (
     <div className="location">
-      <div className="location_title">
-        <button ref={downRef} onClick={() => setIsOpen((prev) => !prev)}>
-          <img src={LocationImage} alt="" />
-          Yangiyo'l
+      <div onClick={() => setIsOpen(!isOpen)} className="location_title">
+         <button >         
+            <p>Yangiyo'l</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="location_dropdown" ref={menuRef}>
-            <div className="location_dropdown_column">
+            <div onClick={() => setIsOpen(false)} className="location_dropdown_column">
               <div className="location_dropdown_items">
                 <p>So'qoq</p>
               </div>

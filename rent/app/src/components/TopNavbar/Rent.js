@@ -9,27 +9,28 @@ function Rent() {
   const menuRef = useRef();
   const downRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== downRef.current) {
-      setIsOpen(false);
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (e.target !== menuRef.current && e.target !== downRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // });
   return (
     <div className="rent">
       <div className="rent_title">
-        <button ref={downRef} onClick={() => setIsOpen((prev) => !prev)}>
-          Ijara
+      <button onClick={() => setIsOpen(!isOpen)}>
+          
+            <p>Ijara</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="rent_dropdown" ref={menuRef}>
             {rent.map((item, i) => (
               <div className="rent_dropdown_box">
-                <h3>{item.city}</h3>
+                <h3 onClick={() => setIsOpen(false)}>{item.city}</h3>
                 {/* <h3>{item.emotions}</h3> */}
               </div>
             ))}

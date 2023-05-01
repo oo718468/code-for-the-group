@@ -9,21 +9,21 @@ function Area() {
 
   return (
     <div className="filters">
-      <div className="filters_title">
-        <button onClick={() => setIsOpen((prev) => !prev)}>
-          <img src={FiltersImage} alt="" />
-          <span> Ko'proq filtrlar</span>
+      <div onClick={() => setIsOpen(!isOpen)} className="filters_title">
+      <button >
+      <img src={FiltersImage} alt="" />
+            <p>Filter</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="filters_dropdown">
             {rent.map((item, i) => (
               <div className="filters_dropdown_box">
-                <h3>{item.city}</h3>
+                <h3 onClick={() => setIsOpen(false)}>{item.city}</h3>
                 {/* <h3>{item.emotions}</h3> */}
               </div>
             ))}

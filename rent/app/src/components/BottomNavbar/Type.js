@@ -14,23 +14,24 @@ function Type() {
   const menuRef = useRef();
   const downRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== downRef.current) {
-      setIsOpen(false);
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (e.target !== menuRef.current && e.target !== downRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // });
+  
   return (
     <div className="type">
-      <div className="type_title">
-        <button ref={downRef} onClick={() => setIsOpen((prev) => !prev)}>
-          <img src={TypeImage} alt="" />
-          Turi
+      <div onClick={() => setIsOpen(!isOpen)} className="type_title">
+      <button >
+      <img src={TypeImage} alt="" />
+            <p>Uy turi</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="type_dropdown" ref={menuRef}>
             <div className="type_dropdown_column">

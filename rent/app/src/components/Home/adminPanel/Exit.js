@@ -1,18 +1,21 @@
-import React from 'react';
+import React from "react";
 import TopNavbar from "../../TopNavbar/Main";
-import Dashboard from './Dashboard';
+import Dashboard from "./Dashboard";
+import { Link } from "react-router-dom";
 
 function Exit() {
   return (
     <>
-    <TopNavbar/>
-    <Dashboard />
-    <div className='header_exit'>
-        <h1>Exit</h1>
-    </div>
+      <TopNavbar />
+      <Dashboard />
+      <div className="header_exit">
+        <Link to="/">
+          {" "}
+          <h1>Exit</h1>
+        </Link>
+      </div>
     </>
-    
-  )
+  );
 }
 
-export default Exit
+export default Exit;

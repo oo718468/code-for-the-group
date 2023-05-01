@@ -18,10 +18,14 @@ function Products() {
         
             <div className="products_image">
             <Swiper 
-            pagination={{
-              dynamicBullets: true,
-            }}
-            modules={[Pagination]}
+            style={{ 
+             "--swiper-navigation-color": "#000",
+            "--swiper-navigation-size": "20px",}}
+      
+            pagination={true}
+            navigation = {true}
+            cssMode ={true}
+            modules={[Pagination,Navigation]}
             className="mySwiper"
           >
             <SwiperSlide><img src={ProductImage} alt="" /></SwiperSlide>
@@ -62,16 +66,27 @@ function Products() {
           <div className="products_item">
             <div className="products_image">
             <Swiper 
+
+              style={{ 
+                "--swiper-navigation-color": "#000",
+              "--swiper-navigation-size": "20px",}}
             pagination={{
               dynamicBullets: true,
+              
             }}
-            modules={[Pagination]}
+            navigation = {true}
+            cssMode ={true}
+            
+            modules={[Pagination, Navigation]}
             className="mySwiper"
           >
+          
+            
             <SwiperSlide><img src={ProductImage} alt="" /></SwiperSlide>
             <SwiperSlide><img src={ProductImage} alt="" /></SwiperSlide>
             <SwiperSlide><img src={ProductImage} alt="" /></SwiperSlide>
             <SwiperSlide><img src={ProductImage} alt="" /></SwiperSlide>
+            
                </Swiper>
               <div className="image_top">
                 <p>Top</p>

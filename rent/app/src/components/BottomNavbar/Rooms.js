@@ -9,24 +9,23 @@ function Rooms() {
   const menuRef = useRef();
   const downRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== downRef.current) {
-      setIsOpen(false);
-    }
-  });
-
+  // window.addEventListener("click", (e) => {
+  //   if (e.target !== menuRef.current && e.target !== downRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // });
+  <img src={RoomsImage} alt="" />
   return (
     <div className="rooms">
-      <div className="rooms_title">
-        <button ref={downRef} onClick={() => setIsOpen((prev) => !prev)}>
-          <img src={RoomsImage} alt="" />
-          Xonalar
+      <div onClick={() => setIsOpen(!isOpen)} className="rooms_title">
+      <button >
+            <p>Xonalar</p>     
           {!isOpen ? (
-            <img src={DownArraw} alt="" />
+            <img src={DownArraw} alt='' />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-        </button>
+          </button>
         {isOpen && (
           <div className="rooms_dropdown" ref={menuRef}>
             <div className="rooms_parahraph">
