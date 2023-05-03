@@ -1817,4 +1817,143 @@ form {
   position: absolute;
   top: 4rem;
   left: 16rem;
+}
+
+.header_definitions {
+  position: relative;
+  top: 4rem;
+}
+.header_definitions .definitions_about_title {
+  text-align: center;
+  padding: 30px 0;
+}
+.header_definitions .definitions_about_title h1 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #55595c;
+}
+.header_definitions .definitions_about_title p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #818a91;
+  padding: 25px 0px;
+}
+.header_definitions .header_card_definitions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 38px;
+  gap: 38px;
+  position: relative;
+}
+.header_definitions .header_card_definitions .definitions_card {
+  width: 256px;
+  height: 340px;
+  background: #191c24;
+  border-radius: 8px;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item {
+  max-width: 212px;
+  height: 189px;
+  margin: 0 auto;
+  position: relative;
+  top: 2rem;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child .correct_card {
+  display: flex;
+  align-items: center;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child h2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 5px 0;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 5px 9px;
+  text-align: start;
+  white-space: nowrap;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child #bir_p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 5px 18px;
+  text-align: start;
+  opacity: 0.35;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child button {
+  width: 212px;
+  height: 28px;
+  background: #df2d43;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.header_definitions .header_card_definitions .definitions_card .definitions_card_item .definitions_card_item_child button span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.typeofpay {
+  position: relative;
+  top: 4rem;
+}
+.typeofpay .child_type_pay {
+  text-align: center;
+  padding: 30px 0;
+}
+.typeofpay .child_type_pay h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #55595c;
+}
+.typeofpay .child_type_pay p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #818a91;
+  padding: 25px 0px;
+}
+.typeofpay .pay_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.typeofpay .pay_cards .pay_cards_child {
+  width: 262px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #191c24;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

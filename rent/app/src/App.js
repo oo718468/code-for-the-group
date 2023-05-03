@@ -13,6 +13,7 @@ import TopUpAccount from "./components/Home/adminPanel/TopUpAccount";
 import Saved1 from "./components/Home/adminPanel/Saved";
 import Exit from "./components/Home/adminPanel/Exit";
 import TypeOfDefinitions from "./components/Home/definitions/TypeOfDefinitions";
+import TypeOfPay from "./components/Home/definitions/TypeOfPay";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="saved1" element={<Saved1 />} />
         <Route path="exit" element={<Exit />} />
         <Route path="definitions" element={<TypeOfDefinitions />} />
+        <Route path="typeofpay" element={<TypeOfPay />} />
       </Routes>
     </div>
   );

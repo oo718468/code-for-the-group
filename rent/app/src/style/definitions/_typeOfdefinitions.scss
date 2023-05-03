@@ -1,0 +1,102 @@
+.header_definitions {
+  position: relative;
+  top: 4rem;
+
+  .definitions_about_title {
+    text-align: center;
+    padding: 30px 0;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      color: #55595c;
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      color: #818a91;
+      padding: 25px 0px;
+    }
+  }
+  .header_card_definitions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 38px;
+    gap: 38px;
+    position: relative;
+
+    .definitions_card {
+      width: 256px;
+      height: 340px;
+      background: #191c24;
+      border-radius: 8px;
+      .definitions_card_item {
+        max-width: 212px;
+        height: 189px;
+        margin: 0 auto;
+        position: relative;
+        top: 2rem;
+        .definitions_card_item_child {
+          .correct_card {
+            display: flex;
+            align-items: center;
+          }
+          h2 {
+            text-align: center;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #ffffff;
+            padding: 5px 0;
+          }
+          h1 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px 0;
+          }
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            color: #ffffff;
+            padding: 5px 9px;
+            text-align: start;
+            white-space: nowrap;
+          }
+          #bir_p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            color: #ffffff;
+            padding: 5px 18px;
+            text-align: start;
+            opacity: 0.35;
+          }
+          button {
+            width: 212px;
+            height: 28px;
+            background: #df2d43;
+            border-radius: 4px;
+            border: none;
+            padding: 5px 0;
+            cursor: pointer;
+            span {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
