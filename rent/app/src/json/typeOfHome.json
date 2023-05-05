@@ -1,10 +1,12 @@
 [
     {
+    "id":1,
     "homeType":"kop qavatli turar joy",
     "emotions" :"hello"
     },
     {
-        "homeType":"Hovli",
-        "emotions" :"hello"
+    "id":2,
+     "homeType":"Hovli",
+    "emotions" :"hello"
     }
 ]

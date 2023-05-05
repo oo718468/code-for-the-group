@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2rem 0px;
   .bottom_header {
-    width: 155px;
+    width: 135px;
     height: 42px;
     background: #ffffff;
     border: 2px solid #e6e6e6;
@@ -34,28 +34,19 @@
   }
 
   .header_json {
-    ul {
-      position: absolute;
-      background: #ffffff;
-      border: 0.5px solid #818181;
-      box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
-      border-radius: 3px;
-      padding: 10px;
-      li {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        padding: 10px;
-        cursor: pointer;
-        list-style: none;
-      }
-      li:hover {
-        background-color: #df2d43;
-        color: white;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    select {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      width: 73px;
+      padding: 4px;
+      color: #55595c;
+    }
+    option {
+      width: 200px;
     }
   }
   .second_bottom_header {

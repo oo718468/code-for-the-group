@@ -1,39 +1,39 @@
-.item_announcement{
-    .header_item{
-       text-align: center;
-       padding: 30px 0;
-       .item_Child{
-            h1{
-                font-size: 36px;
-                font-weight: 600;
-                color: #55595C;
-                padding: 10px 0px;
-            }
-            p{
-                font-size: 16px;
-                font-weight: 500;
-                color:  #818A91;
-                padding: 10px 0px;
-            }
-       }
-       .header_item_button{
-        margin-top: 2rem;
-        button{
-            width: 213px;
-            height: 50px;
-            background: #FFFFFF;
-            border: 2px solid #818A91;
-            border-radius: 50px;
-            margin: 0px 5px;
-            p{
-                font-size: 16px;
-                font-weight: 500;
-                color:  #818A91;
-            }
-        }
-        button:hover{
-            border: 2px solid #DF2D43;
-        }
-       }
+.item_announcement {
+  .header_item {
+    text-align: center;
+    padding: 30px 0;
+    .item_Child {
+      h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: #55595c;
+        padding: 10px 0px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #818a91;
+        padding: 10px 0px;
+      }
     }
+    .header_item_button {
+      margin-top: 2rem;
+      button {
+        width: 213px;
+        height: 50px;
+        background: #ffffff;
+        border: 2px solid #818a91;
+        border-radius: 50px;
+        margin: 0px 7px;
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          color: #818a91;
+        }
+      }
+      button:hover {
+        border: 2px solid #df2d43;
+      }
+    }
+  }
 }

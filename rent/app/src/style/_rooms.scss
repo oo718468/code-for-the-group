@@ -1,11 +1,12 @@
 .rooms {
   padding-right: 12px;
- @media (max-width:1175px) {
-  display: none;
- }
+  @media (max-width: 1175px) {
+    display: none;
+  }
   .rooms_title {
     border: 1px solid #e6e6e6;
     // box-shadow: 2px 2px 17px rgba(154, 154, 154, 0.5);
+    cursor: pointer;
     border-radius: 50px;
     padding: 9px 15px;
     button {
