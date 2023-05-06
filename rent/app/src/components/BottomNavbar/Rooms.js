@@ -14,18 +14,19 @@ function Rooms() {
   //     setIsOpen(false);
   //   }
   // });
-  <img src={RoomsImage} alt="" />
+  <img src={RoomsImage} alt="" />;
   return (
     <div className="rooms">
       <div onClick={() => setIsOpen(!isOpen)} className="rooms_title">
-      <button >
-            <p>Xonalar</p>     
+        <button>
+          <img src={RoomsImage} />
+          <p>Xonalar</p>
           {!isOpen ? (
-            <img src={DownArraw} alt='' />
+            <img src={DownArraw} alt="" />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-          </button>
+        </button>
         {isOpen && (
           <div className="rooms_dropdown" ref={menuRef}>
             <div className="rooms_parahraph">

@@ -17,17 +17,21 @@ function Location() {
   return (
     <div className="location">
       <div onClick={() => setIsOpen(!isOpen)} className="location_title">
-         <button >         
-            <p>Yangiyo'l</p>     
+        <button>
+          <img src={LocationImage} />
+          <p>Yangiyo'l</p>
           {!isOpen ? (
-            <img src={DownArraw} alt='' />
+            <img src={DownArraw} alt="" />
           ) : (
             <img src={UpArraw} alt="" />
           )}
-          </button>
+        </button>
         {isOpen && (
           <div className="location_dropdown" ref={menuRef}>
-            <div onClick={() => setIsOpen(false)} className="location_dropdown_column">
+            <div
+              onClick={() => setIsOpen(false)}
+              className="location_dropdown_column"
+            >
               <div className="location_dropdown_items">
                 <p>So'qoq</p>
               </div>

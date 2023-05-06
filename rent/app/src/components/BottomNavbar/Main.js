@@ -8,6 +8,7 @@ import Rooms from "./Rooms";
 import Filters from "./Filters";
 import Saved from "./Saved";
 import Search from "./Search";
+import Category from "./Category";
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
         <div className="main">
           <City />
           <Location />
+          <Category />
           <Type />
           <Price />
           <Area />

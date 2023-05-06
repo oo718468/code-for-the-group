@@ -10,27 +10,21 @@ import "swiper/css/scrollbar";
 import productJson from "../../json/products_item";
 
 function Products() {
-  const [addCart, setaddCart] = useState([]);
-  const divRef = useRef(null);
+  const [cart, setCart] = useState([]);
+  const [page, setPage] = useState("productJson");
 
-  // const handleCartClik = () => {
-  //   const firstCart = divRef.current.innerHTML;
-  //   setaddCart([...addCart, firstCart]);
-  //   console.log(setaddCart);
-  // };
+  const addToCart = (productJson) => {
+    setCart([...cart, ...productJson]);
+    console.log(cart);
+  };
 
   return (
     <div className="products">
       <div className="container">
         <div className="products_container">
           {/*  json dan kevotgan malumotla*/}
-          {productJson.map((item) => (
-            <div
-              key={item.id}
-              ref={divRef}
-              // onClick={handleCartClik}
-              className="products_item"
-            >
+          {productJson.map((item, idx) => (
+            <div key={idx} className="products_item">
               <div className="products_image">
                 <Swiper
                   style={{
@@ -85,11 +79,10 @@ function Products() {
               <div className="products_price">
                 <p>{item.narxi} so'm</p>
               </div>
-              {/* <p>
-                {addCart.map((firstCart, index) => (
-                  <h1 key={index}>{firstCart}</h1>
-                ))}
-              </p> */}
+              <button key={idx} onClick={() => addToCart(productJson)}>
+                add to cart
+              </button>
+              <p>go to the ({cart.length})</p>
             </div>
           ))}
 

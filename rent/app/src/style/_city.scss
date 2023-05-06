@@ -17,12 +17,14 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 24px;
-
       color: #818a91;
       transition: 1s ease;
       cursor: pointer;
       &:hover {
         color: #df2d43;
+      }
+      img {
+        padding-right: 5px;
       }
     }
   }
