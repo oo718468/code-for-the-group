@@ -1,0 +1,14 @@
+.top_slider {
+  margin-top: 69px;
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+  }
+  .products_container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

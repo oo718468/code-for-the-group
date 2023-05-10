@@ -1,0 +1,46 @@
+.top_conveniense {
+  margin-top: 137px;
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+    padding-bottom: 40px;
+  }
+  .header_conveniense {
+    display: flex;
+    justify-content: space-between;
+    max-width: 545px;
+
+    .left_conveniense {
+      .internet {
+        display: flex;
+        align-items: center;
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #2a2d3a;
+          padding: 15px 30px;
+        }
+      }
+    }
+    .right_conveniense {
+      .internet {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #2a2d3a;
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}

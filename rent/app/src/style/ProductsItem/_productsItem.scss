@@ -1,0 +1,11 @@
+.container {
+  .header_products {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 42px;
+  }
+  .bottom_products {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

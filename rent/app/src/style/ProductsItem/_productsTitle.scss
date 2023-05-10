@@ -1,0 +1,136 @@
+.header_product_title {
+  max-width: 503px;
+  .product_user {
+    background: #191c24;
+    border: 1px solid #e9e9e9;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    width: 503px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    p {
+      padding: 0px 28px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .some_about {
+    margin-top: 28px;
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #212121;
+    }
+  }
+  .product_location {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    justify-content: space-between;
+    .product_location_first {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #df2d43;
+        padding: 0px 7px;
+      }
+    }
+    .product_location_second {
+      display: flex;
+      align-content: center;
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.084px;
+        color: #141415;
+        padding: 0px 5px;
+      }
+    }
+  }
+  .product_all_about {
+    margin-top: 61px;
+    P {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #1d1d1d;
+    }
+  }
+  .product_price {
+    margin-top: 89px;
+    display: flex;
+    align-items: center;
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      color: #000000;
+    }
+    #som {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #000000;
+      padding: 0px 9px;
+    }
+  }
+  .product_buttons {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .product_phone_number {
+      button {
+        width: 245px;
+        height: 50px;
+        background: #df2d43;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #ffffff;
+        }
+      }
+    }
+    .product_send_massage {
+      button {
+        width: 245px;
+        height: 50px;
+        border: 2px solid #df2d43;
+        border-radius: 6px;
+        background-color: white;
+        cursor: pointer;
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #df2d43;
+        }
+      }
+    }
+  }
+}

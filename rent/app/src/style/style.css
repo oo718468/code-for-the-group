@@ -1748,6 +1748,7 @@ form {
   font-weight: 500;
   font-size: 15px;
   color: white;
+  white-space: nowrap;
 }
 .header_dashboard .profile_items .my_profil_first:hover {
   border-radius: 0px 50px 50px 0px;
@@ -1968,4 +1969,288 @@ form {
   justify-content: center;
   border: 4px solid #191c24;
   border-radius: 8px;
+}
+
+.container .header_products {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 42px;
+}
+.container .bottom_products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header_product_slider {
+  max-width: 609px;
+  max-height: 553px;
+}
+.header_product_slider .product_slider_bottom_first .mySwiper3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_product_slider .product_slider_bottom_first .mySwiper3 img {
+  width: 514px;
+  height: 553px;
+}
+.header_product_slider .product_slider_bottom_first .mySwiper1 {
+  display: block;
+  justify-content: start;
+  align-items: center;
+}
+.header_product_slider .product_slider_bottom_first .mySwiper1 img {
+  width: 85px;
+  height: 120px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header_product_title {
+  max-width: 503px;
+}
+.header_product_title .product_user {
+  background: #191c24;
+  border: 1px solid #e9e9e9;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  width: 503px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+}
+.header_product_title .product_user p {
+  padding: 0px 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.header_product_title .some_about {
+  margin-top: 28px;
+}
+.header_product_title .some_about p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #212121;
+}
+.header_product_title .product_location {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  justify-content: space-between;
+}
+.header_product_title .product_location .product_location_first {
+  display: flex;
+  align-items: center;
+}
+.header_product_title .product_location .product_location_first p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #df2d43;
+  padding: 0px 7px;
+}
+.header_product_title .product_location .product_location_second {
+  display: flex;
+  align-content: center;
+}
+.header_product_title .product_location .product_location_second p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.084px;
+  color: #141415;
+  padding: 0px 5px;
+}
+.header_product_title .product_all_about {
+  margin-top: 61px;
+}
+.header_product_title .product_all_about P {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d1d1d;
+}
+.header_product_title .product_price {
+  margin-top: 89px;
+  display: flex;
+  align-items: center;
+}
+.header_product_title .product_price p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+.header_product_title .product_price #som {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  padding: 0px 9px;
+}
+.header_product_title .product_buttons {
+  margin-top: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_product_title .product_buttons .product_phone_number button {
+  width: 245px;
+  height: 50px;
+  background: #df2d43;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.header_product_title .product_buttons .product_phone_number button p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+.header_product_title .product_buttons .product_send_massage button {
+  width: 245px;
+  height: 50px;
+  border: 2px solid #df2d43;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+.header_product_title .product_buttons .product_send_massage button p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #df2d43;
+}
+
+.top_conveniense {
+  margin-top: 137px;
+}
+.top_conveniense h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  padding-bottom: 40px;
+}
+.top_conveniense .header_conveniense {
+  display: flex;
+  justify-content: space-between;
+  max-width: 545px;
+}
+.top_conveniense .header_conveniense .left_conveniense .internet {
+  display: flex;
+  align-items: center;
+}
+.top_conveniense .header_conveniense .left_conveniense .internet p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2a2d3a;
+  padding: 15px 30px;
+}
+.top_conveniense .header_conveniense .right_conveniense .internet {
+  display: flex;
+  align-items: center;
+}
+.top_conveniense .header_conveniense .right_conveniense .internet p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2a2d3a;
+  padding: 15px 30px;
+}
+
+.header_property {
+  margin-top: 100px;
+}
+.header_property h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  padding: 10px 0px;
+}
+.header_property .header_floot {
+  max-width: 640px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_property .header_floot .hr_div {
+  width: 641px;
+  height: 1px;
+  background: #d9d9d9;
+}
+.header_property .header_floot .first_floot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 270px;
+  gap: 10rem;
+  padding: 10px 0px;
+}
+.header_property .header_floot .first_floot h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #686c6e;
+}
+.header_property .header_floot .first_floot p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+
+.header_maps {
+  margin-top: 69px;
+}
+.header_maps h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+.header_maps .google_carta {
+  margin-top: 60px;
+}
+
+.top_slider {
+  margin-top: 69px;
+}
+.top_slider h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+.top_slider .products_container {
+  display: flex;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+.header_property {
+  margin-top: 100px;
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+    padding: 10px 0px;
+  }
+  .header_floot {
+    max-width: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .hr_div {
+      width: 641px;
+      height: 1px;
+      background: #d9d9d9;
+    }
+    .first_floot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 270px;
+      gap: 10rem;
+      padding: 10px 0px;
+
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #686c6e;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+      }
+    }
+  }
+}

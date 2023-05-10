@@ -8,15 +8,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import productJson from "../../json/products_item";
+import { Link } from "react-router-dom";
 
 function Products() {
   const [cart, setCart] = useState([]);
-  const [page, setPage] = useState("productJson");
-
-  const addToCart = (productJson) => {
-    setCart([...cart, ...productJson]);
-    console.log(cart);
-  };
 
   return (
     <div className="products">
@@ -26,34 +21,36 @@ function Products() {
           {productJson.map((item, idx) => (
             <div key={idx} className="products_item">
               <div className="products_image">
-                <Swiper
-                  style={{
-                    "--swiper-navigation-color": "#000",
-                    "--swiper-navigation-size": "20px",
-                  }}
-                  pagination={{
-                    dynamicBullets: true,
-                  }}
-                  navigation={true}
-                  cssMode={true}
-                  modules={[Pagination, Navigation]}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <img src={item.img} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <img src={item.img} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <img src={item.img} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={item.img} />
-                  </SwiperSlide>
-                </Swiper>
+                <Link to="/productsItem" key={idx}>
+                  <Swiper
+                    style={{
+                      "--swiper-navigation-color": "#000",
+                      "--swiper-navigation-size": "20px",
+                    }}
+                    pagination={{
+                      dynamicBullets: true,
+                    }}
+                    navigation={true}
+                    cssMode={true}
+                    modules={[Pagination, Navigation]}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <img src={item.img} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <img src={item.img} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <img src={item.img} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={item.img} />
+                    </SwiperSlide>
+                  </Swiper>
+                </Link>
                 <div className="image_top">
                   <p>Top</p>
                 </div>
@@ -79,10 +76,6 @@ function Products() {
               <div className="products_price">
                 <p>{item.narxi} so'm</p>
               </div>
-              <button key={idx} onClick={() => addToCart(productJson)}>
-                add to cart
-              </button>
-              <p>go to the ({cart.length})</p>
             </div>
           ))}
 
