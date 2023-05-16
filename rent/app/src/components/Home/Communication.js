@@ -18,8 +18,8 @@ function Communication() {
     <div className="header_communicat">
       <h4>Aloqa uchun ma'lumotlar</h4>
       <div className="communicat_name">
-        <input type="text" placeholder="ism" />
-        <input type="text" placeholder="familiya" />
+        <input type="text" placeholder="ism" className="communicat_names" />
+        <input type="text" placeholder="familiya" className="communicat_name" />
       </div>
       <div className="communicat_number">
         <div className="comunicat_flags">
@@ -27,10 +27,11 @@ function Communication() {
             onChange={handleInput}
             value={cardNumber}
             placeholder="+9989"
+            id="number-id"
           />
         </div>
         <div className="comunicat_child_number">
-          <input ref={input_value} placeholder="00 000 00 00" />
+          <input ref={input_value} placeholder="raqamingiz kiriting" />
         </div>
       </div>
       <div className="communicat_button">

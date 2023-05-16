@@ -9,10 +9,15 @@ form {
   justify-content: center;
 }
 .header_photo {
-  position: relative;
-  left: 2rem;
   gap: 5px;
 
+  .photo-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
   .photo_item {
     h4 {
       font-weight: 500;

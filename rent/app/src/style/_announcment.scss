@@ -1,15 +1,12 @@
-.big_announcement{
-   max-width: 608px;
+.big_announcement {
+  max-width: 432px;
+  margin: 0 auto;
+
+  position: relative;
+  top: 4rem;
+  .item_announcement {
+    max-width: 506px;
     margin: 0 auto;
-   
-    position: relative;
-    top: 4rem;
-    .item_announcement{
-        max-width: 506px;
-        margin: 0 auto;
-        background-color: white;
-      
-    }
+    background-color: white;
+  }
 }
-
-

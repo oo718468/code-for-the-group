@@ -7,6 +7,7 @@ import Convenience from "./Convenience";
 import AboutProperty from "./AboutProperty";
 import GoogleMaps from "./GoogleMaps";
 import SliderBottom from "./SliderBottom";
+import Fotter from "../../Fotter menu/Fotter";
 
 function ProductsItem() {
   return (
@@ -24,6 +25,10 @@ function ProductsItem() {
           <GoogleMaps />
           <SliderBottom />
         </div>
+        {/* <div className="footer_child">
+          <Fotter />
+        </div> */}
+        <Fotter />
       </div>
     </>
   );

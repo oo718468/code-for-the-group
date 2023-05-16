@@ -13,10 +13,12 @@ function SliderBottom() {
       <h1>O'xshash maxsulotlar</h1>
       <div className="bottom_slider">
         <Swiper
+          slidesPerGroup={1}
           navigation={true}
-          // slidesPerView={5}
-          modules={[Navigation, Pagination]}
-          className="mySwiper"
+          slidesPerView={true}
+          modules={[Navigation]}
+          spaceBetween={30}
+          className="mySwiper5"
         >
           <SwiperSlide>
             <div className="products_container">

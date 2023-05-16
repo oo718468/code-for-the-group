@@ -1,66 +1,66 @@
-.header_room_size{
-display: flex;
-justify-content: space-around;
-align-items: center;
-    .first_room_size{
-
-     button{
-         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 135px;
-        height: 42px;
-        gap: 5px;
-        border: 2px solid #E6E6E6;
-        border-radius: 50px;
-        background-color: #fff;
-       p{
-            font-weight: 500;
-            font-size: 14px;
-            color: #818A91;
-            }
-        }
-        button:hover{
-            border: 2px solid #DF2D43;
-
-            p{
-                color: #DF2D43;
-            }
-        }
+.header_room_size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .first_room_size {
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 135px;
+      height: 42px;
+      gap: 5px;
+      border: 2px solid #e6e6e6;
+      border-radius: 50px;
+      background-color: #fff;
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        color: #818a91;
+      }
     }
+    button:hover {
+      border: 2px solid #df2d43;
 
-    .second_room_size{
-        display: flex;
-        gap: 10px;
-        .room_size_child_one{
-            display: flex;
-            width: 117px;
-            border: 1px solid #E6E6E6;
-            border-radius: 8px;
-            height: 42px;
-            align-items: center;
-            padding: 5px;
-            input{
-                width: 5rem;
-                height: 20px;
-                border: none;
-                outline: none;
-            }
-        }
-        .room_size_child_two{
-            display: flex;
-            width: 117px;
-            border: 1px solid #E6E6E6;
-            border-radius: 8px;
-            height: 42px;
-            align-items: center;
-            padding: 5px;
-            input{
-                width: 5rem;
-                height: 20px;
-                border: none;
-                outline: none;
-            }
-        }
+      p {
+        color: #df2d43;
+      }
     }
+  }
+
+  .second_room_size {
+    display: flex;
+    gap: 10px;
+    .room_size_child_one {
+      width: 200px;
+      height: 42px;
+      border: 1px solid #e6e6e6;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      input {
+        width: 8rem;
+        height: 20px;
+        border: none;
+        outline: none;
+      }
+    }
+    .room_size_child_two {
+      display: flex;
+      width: 117px;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      height: 42px;
+      align-items: center;
+      padding: 5px;
+      input {
+        width: 5rem;
+        height: 20px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
 }

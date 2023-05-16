@@ -15,6 +15,7 @@ import Exit from "./components/Home/adminPanel/Exit";
 import TypeOfDefinitions from "./components/Home/definitions/TypeOfDefinitions";
 import TypeOfPay from "./components/Home/definitions/TypeOfPay";
 import ProductsItem from "./components/Products/Products item/ProductsItem";
+import Fotter from "./components/Fotter menu/Fotter";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="definitions" element={<TypeOfDefinitions />} />
         <Route path="typeofpay" element={<TypeOfPay />} />
         <Route path="productsItem" element={<ProductsItem />} />
+        <Route path="fotter" element={<Fotter />} />
       </Routes>
     </div>
   );

@@ -4,48 +4,92 @@
     font-weight: 500;
     font-size: 14px;
     color: #55595c;
-    padding-left: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
   .communicat_name {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px 0px;
+    position: relative;
+    z-index: 2;
     input {
-      width: 194px;
+      width: 200px;
       height: 42px;
-      border: 1px solid #e6e6e6;
-      border-radius: 8px;
+      border-radius: 50px;
+      border: 1px solid #000;
       outline: none;
-      padding: 5px;
+      position: relative;
+      padding: 0px 26px;
+    }
+    ::placeholder {
+      position: absolute;
+      left: 20px;
+      top: -10px;
+      background-color: white;
+      padding: 0 20px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: #55595c;
+    }
+    .filter:focus ~ .placeholder,
+    .filter:valid ~ .placeholder {
+      display: none;
     }
   }
   .communicat_number {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    #number-id {
+      width: 124px;
+      height: 42px;
+      border: 1px solid #000000;
+      border-radius: 50px;
+      outline: none;
+      z-index: 1;
+      position: relative;
+      padding: 0px 26px;
+    }
+    #number-id::placeholder {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: #000000;
+      text-align: end;
+      padding: 0px 23px;
+    }
     .comunicat_flags {
       padding: 10px 0px;
       input {
-        width: 115px;
+        width: 200px;
         height: 42px;
-        border: 1px solid #e6e6e6;
-        border-radius: 8px;
-        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 50px;
         outline: none;
+        padding: 0px 26px;
       }
     }
     .comunicat_child_number {
       padding: 10px 0px;
       input {
-        width: 283px;
+        width: 272px;
         height: 42px;
-        border: 1px solid #e6e6e6;
-        border-radius: 8px;
-        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 50px;
         outline: none;
+        padding: 0px 26px;
+      }
+      ::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #cccccc;
+        padding-left: 26px;
       }
     }
   }
@@ -65,7 +109,11 @@
       border-radius: 60px;
       cursor: pointer;
       p {
-        color: white;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        color: #ffffff;
       }
     }
   }

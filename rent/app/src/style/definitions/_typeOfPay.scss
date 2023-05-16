@@ -1,6 +1,7 @@
 .typeofpay {
   position: relative;
   top: 4rem;
+
   .child_type_pay {
     text-align: center;
     padding: 30px 0;
@@ -37,4 +38,17 @@
       border-radius: 8px;
     }
   }
+}
+// .footer_item {
+//   position: absolute;
+//   bottom: 0;
+//   max-width: 1302px;
+//   margin: 0 auto;
+// }
+
+.left_item_bar {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin-top: 4rem;
 }
